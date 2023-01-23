@@ -1,0 +1,229 @@
+body{
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5F9EA0, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5F9EA0, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.form_label{
+    width: 40%;
+    color: cadetblue;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.form_input{
+    height: 30px;;
+    width: 90%;
+}
+
+/*Registration CSS - Start*/
+.form-registration{
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+    margin: 130px auto;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.form-registration-body{
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.form-registration-body > *{
+    padding: 5px;
+}
+
+.header{
+    text-align: center;
+    border-radius: 5px;
+    border: solid black 2px;
+    color: white;
+    background-color: cadetblue;
+    padding: 7px 5px;
+    width: 90%;
+}
+
+.footer{
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.btn{
+    height: 40px;
+    width: 90%;
+    background-color: cadetblue;
+    color: white;
+    font-size: large;
+}
+
+.already-account{
+    color: cadetblue;
+    font-weight: bold;
+    padding-top: 10px;
+}
+/*Registration CSS - End*/
+
+/*Login CSS - Start*/
+.form-login{
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+    margin: 130px auto;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.form-login-body{
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.form-login-body > *{
+    padding: 5px;
+}
+/*Login CSS - End*/
+
+/*Student Registration - Start*/
+.form-student-registration{
+    background-color: white;
+    border-radius: 5px;
+    width: 50%;
+    margin: 130px auto;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.form-student-registration-body{
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.form-student-registration-body > *{
+    padding: 5px;
+}
+
+.student_registration_header{
+    text-align: center;
+    border-radius: 5px;
+    border: solid black 2px;
+    color: white;
+    background-color: cadetblue;
+    padding: 7px 5px;
+    width: 97%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 47%;
+    padding: 10px;
+}
+
+.btn_student_save, .btn_student_cancel{
+    height: 35px;
+    width: 47%;
+    background-color: cadetblue;
+    color: white;
+    font-size: large;
+}
+
+.img-wrap{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.img-upload:hover:before{
+    opacity: 1;
+}
+
+img {
+    width: auto;
+    height: 100%;
+}
+/*Student Registration - End*/
+
+/*College Dashboard - Start*/
+.form-college-dashboard{
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    margin: 130px auto;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.form-college-dashboard-body{
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.form-college-dashboard-body > *{
+    padding: 5px;
+}
+
+.college_dashboard_header{
+    text-align: center;
+    border-radius: 5px;
+    border: solid black 2px;
+    color: white;
+    background-color: cadetblue;
+    padding: 7px 5px;
+    width: 99%;
+}
+
+.btn_add_student{
+    height: 35px;
+    width: 100%;
+    background-color: cadetblue;
+    color: white;
+    font-size: large;
+}
+
+.studentGrid{
+    width: 100%;
+}
+/*College Dashboard - End*/
+
+/*Company Dashboard - Start*/
+.form-company-dashboard{
+    background-color: white;
+    border-radius: 5px;
+    width: 90%;
+    margin: 130px auto;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.form-company-dashboard-body{
+    text-align: left;
+    padding: 20px 10px;
+}
+
+.form-company-dashboard-body > *{
+    padding: 5px;
+}
+
+.company_dashboard_header{
+    text-align: center;
+    border-radius: 5px;
+    border: solid black 2px;
+    color: white;
+    background-color: cadetblue;
+    padding: 7px 5px;
+    width: 99%;
+}
+
+.companyGrid{
+    width: 100%;
+}
+/*Company Dashboard - End*/
