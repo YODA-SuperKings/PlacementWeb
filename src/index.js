@@ -9,6 +9,7 @@ import CollegeDashboard from "./Components/CollegeDashboard";
 import StudentRegistration from "./Components/StudentRegistration";
 import CompanyDashboard from "./Components/CompanyDashboard";
 import PlacementRequest from "./Components/PlacementRequest";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
