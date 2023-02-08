@@ -1,31 +1,11 @@
 import React, {useState, useEffect} from 'react';
 import toast from 'react-simple-toasts';
-import DataGrid from 'react-data-grid';
-import 'react-data-grid/lib/styles.css';
+import Table from 'react-bootstrap/Table';
 import { useNavigate,Link } from "react-router-dom";
 
 function CollegeDashboard(){
     const navigate = useNavigate();
     const [tableData, setTableData] = useState([]);
-    const columns = [
-        { key: 'id', name: 'Id', width: 1},
-        { key: 'studentName', name: 'Student Name'},
-        { key: 'registrationNumber', name: 'Registration Number'},
-        { key: 'dob', name: 'DOB'},
-        { key: 'gender', name: 'Gender'},
-        { key: 'email', name: 'Email'},
-        { key: 'phone', name: 'Phone'},
-        { key: 'course', name: 'Course'},
-        { key: 'instituteName', name: 'Institute Name'},
-        { key: 'university', name: 'University'},
-        { key: 'yearOfPassing', name: 'Year Of Passing'},
-        { key: 'percentage', name: 'Percentage'},
-        { key: 'companyName', name: 'Company Name'},
-        { key: 'placementDate', name: 'Placement Date'},
-        { key: 'roundOne', name: 'Round 1'},
-        { key: 'roundTwo', name: 'Round 2'},
-        { key: 'isGotOffer', name: 'Result'}
-    ]
 
     const getStudentsGridData  = (e) => {
         fetch('https://localhost:44342/api/Student/GetStudents', 
@@ -68,7 +48,54 @@ function CollegeDashboard(){
                     <button className='btn_add_student' onClick={(e)=>handleAddStudent(e)}>Add Student Details</button>
                 </div>
                 <div>
-                    <DataGrid className='studentGrid' columns={columns} rows={tableData} />
+                <Table responsive bordered hover>
+                        <thead>
+                            <tr>
+                                <th>Student Name</th>
+                                <th>Registration Number</th>
+                                <th>DOB</th>
+                                <th>Gender</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Course</th>
+                                <th>Institute Name</th>
+                                <th>University</th>
+                                <th>Year Of Passing</th>
+                                <th>Percentage</th>
+                                <th>Company Name</th>
+                                <th>Placement Date</th>
+                                <th>Round 1</th>
+                                <th>Round 2</th>
+                                <th>Result</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {tableData.map(d =>
+                                <tr key = {d.id}>
+                                    <td>{d.studentName}</td>
+                                    <td>{d.registrationNumber}</td>
+                                    <td>{d.dob}</td>
+                                    <td>{d.gender}</td>
+                                    <td>{d.email}</td>
+                                    <td>{d.phone}</td>
+                                    <td>{d.course}</td>
+                                    <td>{d.instituteName}</td>
+                                    <td>{d.university}</td>
+                                    <td>{d.yearOfPassing}</td>
+                                    <td>{d.percentage}</td>
+                                    <td>{d.companyName}</td>
+                                    <td>{d.placementDate}</td>
+                                    <td>{d.roundOne}</td>
+                                    <td>{d.roundTwo}</td>
+                                    <td>{d.isGotOffer}</td>
+                                    <td>
+                                        <button type="submit" class="btn">Edit</button>
+                                    </td>
+                                </tr>
+                            )}
+                        </tbody>
+                    </Table>
                 </div>
             </div>
         </div>
